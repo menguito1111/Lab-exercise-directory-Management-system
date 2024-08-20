@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void displayFiles(){
+int main(){
      int choice;
     cout << "1. To display list of Files" << endl;
     cout << "2. To create new directory" << endl;

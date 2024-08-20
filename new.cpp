@@ -1,24 +1,37 @@
 #include <string>
 #include <iostream>
+#include <conio.h>
 
 
-using namespace std;
+namespace fs= std::filesystem;
 
-int main(){
-     int choice;
-    cout << "1. To display list of Files" << endl;
-    cout << "2. To create new directory" << endl;
-    cout << "3. To change the working directory" << endl;
-    cout << "4. Exit" << endl;
-    cout << "Enter a number: ";
+
+    void displayFiles(){
+    std::cout << "1. To display list of Files" << endl;
+    std::cout << "2. To create new directory" << endl;
+    std::cout << "3. To change the working directory" << endl;
+    std::cout << "4. Exit" << endl;
+    std::cout << "Enter a number: ";
+    int choice;
     cin >> choice;
 
+    if(choice == 1){
+        std::cout << "\nList of all files\n";
+        int count = 0;
+    }
+}
+
+int main(){
     switch(choice){
         case 1:
-        cout << "1. List of files" << endl;
-        cout << "2. List of extension files" << endl;
-        cout << "3. list of name wise" << endl;
+        std::cout << "\nFile Details\n";
+        std::cout << "1. List of files" << endl;
+        std::cout << "2. List of extension files" << endl;
+        std::cout << "3. list of name wise" << endl;
         break;
+
+        case 2:
+        
 
     }
     

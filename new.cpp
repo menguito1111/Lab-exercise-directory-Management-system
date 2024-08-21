@@ -34,6 +34,17 @@ void changeDirectory(){
     std::cout << "Enter the number: ";
     int choice;
     std::cin >> choice;
+
+        if(choice == 1) {
+            _chdir("..");
+        } else if (choice == 2){
+            _chdir("\\");
+        } else if (choice == 3) {
+            std::cout << "Please enter the directory name: ";
+            std::string dirName;
+            std::cin >> dirName;
+            _chdir(dirName.c_str());
+        }
 }
 
    

@@ -27,7 +27,13 @@ void changeDirectory(){
     char currentDir[FILENAME_MAX];
     _getcwd(currentDir, sizeof(currentDir));
     std::cout << "\nCurrent directory: " << currentDir << "\n";
-    
+
+    std::cout << "1. step by step backward\n";
+    std::cout << "2. goto root directory\n";
+    std::cout << "3. forward directory\n";
+    std::cout << "Enter the number: ";
+    int choice;
+    std::cin >> choice;
 }
 
    

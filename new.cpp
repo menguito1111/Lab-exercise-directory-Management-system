@@ -1,12 +1,17 @@
 #include <string>
 #include <iostream>
-#include <conio.h>
+#include <cstdio> 
+#include <cstdlib> 
+#include <direct.h>
+#include <windows.h>
 
 
 namespace fs= std::filesystem;
 
 
     void displayFiles(){
+        system("dir);   
+        system("pause"); //mag pause kadyot ang screen
     std::cout << "1. To display list of Files" << endl;
     std::cout << "2. To create new directory" << endl;
     std::cout << "3. To change the working directory" << endl;

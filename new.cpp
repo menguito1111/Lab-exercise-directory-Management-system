@@ -37,11 +37,7 @@ void changeDirectory(){
 int main(){
     switch(choice){
         case 1:
-        std::cout << "\nFile Details\n";
-        std::cout << "1. List of files" << endl;
-        std::cout << "2. List of extension files" << endl;
-        std::cout << "3. list of name wise" << endl;
-        break;
+      
 
         
 

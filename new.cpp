@@ -46,18 +46,7 @@ void changeDirectory(){
             _chdir(dirName.c_str());
         }
 }
-
-   
-    
-
-
 int main(){
-    switch(choice){
-        case 1:
-      
-
-        
-
-    }
-    
+   
+ return 0;     
 }

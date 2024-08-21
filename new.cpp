@@ -61,11 +61,25 @@ int main(){
             std::cout << "Enter a number: ";
             std::cin >> choice;
 
-            switch (choice) {
-                case 1:
+        switch (choice) {
+            case 1:
                 displayFiles();
+                break;
+            case 2:
+                createDirectory();
+                break;
+            case 3:
+                changeDirectory();
+                break;
+            case 4:
+                std::cout << "Exiting...\n";
+                break;
+            default:
+                std::cout << "Invalid option! Please try again.\n";
+            system("pause")
+                break;
             }
-        }
+        }while (choice != 4);
    
  return 0;     
 }

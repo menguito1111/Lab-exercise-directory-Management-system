@@ -12,6 +12,19 @@ namespace fs= std::filesystem;
     void displayFiles(){
         system("dir);   
         system("pause"); //mag pause kadyot ang screen
+    }
+void createDirectory(){
+    std::cout << "\nEnter the directory name: ";
+    std::string dirName;
+    std::cin >> dirName;
+
+        if(_mkdir(dirName.c_str()) == 0){
+            std::cout << "\nDirectory " << dirName << " Successfully Created\n";
+        }else {
+            std::cout << "\nFailed to created directory " << dirName << "\n";
+        }
+    system("pause");
+}
     std::cout << "1. To display list of Files" << endl;
     std::cout << "2. To create new directory" << endl;
     std::cout << "3. To change the working directory" << endl;
